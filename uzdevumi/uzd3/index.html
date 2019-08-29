@@ -5,9 +5,8 @@
     <meta charset="utf8">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../../styles.css">
-    <script type="text/javascript" >
-      var objekts = {};
-    </script>
+    <script src="./objekti.js" > //PIELABOT SINTAKSI
+         </script>
   </head>
   <body class="container">
     <div id="task">
@@ -18,8 +17,17 @@
         <li>Izveidot funkciju, kura izdrukās visas objekta atslēgas un to vērtības</li>
       </ol>
     </div>
-    <div id="root">
+    <div id="root" class="row justify-content-center">
+      <div class="row justify-content-center">
+        <div class="col-sm-12 label">Pievienot atslēgu ar vērtību</div>
+        <input class="col-md-5 form-control" id="pievienot_atslega" class="col-lg-5 form-control" type="text" value="0"/>
+        <input class="col-md-5 form-control" id="pievienot_vertiba" class="col-lg-5 form-control" type="text" value="0"/>
+        <button class="col-md-3 btn btn-success" onClick="pievienot()">Pievienot</button>
+        <button class="col-md-3 btn btn-danger" onClick="nonemt()">Noņemt</button>
+      </div>
     </div>
+    <div id='rezultats'>
+          </div>
     <div id="info">
       <h3>Noderīgas saites</h3>
       <ul>
